@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My profile | FitPulse</title>
+<link rel="stylesheet" href="../css/style.css"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet"></head>
+<body data-panel="user" data-page="profile"><main id="app"><h1>My profile</h1><p class="sub">Keep your details and goals up to date.</p><div class="card"><form id="pf"><div><label>Full name</label><input name="name" data-v="name"><span class="err"></span></div><div><label>Email</label><input name="email" data-v="email"><span class="err"></span></div><div><label>Phone</label><input name="phone" data-v="phone"><span class="err"></span></div>
+<div><label>Age</label><input name="age" type="number" data-v="age"><span class="err"></span></div>
+<div><label>Height (cm)</label><input name="height" type="number" data-v="num"><span class="err"></span></div>
+<div><label>Weight (kg)</label><input name="weight" type="number" data-v="num"><span class="err"></span></div>
+<div><label>Goal</label><select name="goal" data-v="select"><option value="">Choose...</option><option>Fat loss</option><option>Muscle gain</option><option>Flexibility</option><option>Endurance</option></select><span class="err"></span></div>
+<div class="radios"><label>Gender</label><label><input type="radio" name="gender" value="M"> Male</label><label><input type="radio" name="gender" value="F"> Female</label><label><input type="radio" name="gender" value="O"> Other</label><span class="err"></span></div>
+<div><label>Password</label><input id="pw" name="password" type="password" data-v="password pattern"><span class="err"></span></div><div><label>Confirm password</label><input name="confirm" type="password" data-v="req match" data-match="pw"><span class="err"></span></div><div class="full"><button class="btn">Save profile</button></div></form></div></main>
+<script src="../js/data.js"></script><script src="../js/layout.js"></script><script src="../js/validate.js"></script><script src="../js/pages.js"></script></body></html>
